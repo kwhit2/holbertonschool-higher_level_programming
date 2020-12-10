@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+if __name__ == '__main__':
+    from sys import argv
+    #  print("{}".format(sum(int(i) for i in argv[1:])))
+    add = 0
+
+    for i in argv[1:]:
+        add += int(i)
+    print("{:d}".format(add))
