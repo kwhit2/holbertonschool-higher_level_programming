@@ -8,3 +8,6 @@ def square_matrix_simple(matrix=[]):
 #  for x in newmatrix:
 #  newmatrix = [y*y for y in x]
 #  return list(newmatrix)
+
+#  Below also works
+#  return [[x ** 2 for x in row] for row in matrix]
