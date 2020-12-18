@@ -4,7 +4,7 @@ def square_matrix_simple(matrix=[]):
         return [list(map(lambda x: x**2, x)) for x in matrix]
 
 #  Did not work
-#  newmatrix = matrix[:]
+#  newmatrix = matrix.copy()
 #  for x in newmatrix:
 #  newmatrix = [y*y for y in x]
-#  return newmatrix
+#  return list(newmatrix)
