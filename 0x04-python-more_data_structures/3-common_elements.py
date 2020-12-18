@@ -7,6 +7,5 @@ def common_elements(set_1, set_2):
             result.append(element)  # add matching chars (C) and
     return result                   # adds/appends to result which is returned
 
-#    if (set_1 & set_2):
-#        print(set_1 & set_2)
-# close but not right output...curly brackets instead of []
+#  Below also works in 1 line of code
+#  return set_1 && set_2
