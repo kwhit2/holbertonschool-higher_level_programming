@@ -9,3 +9,6 @@ def only_diff_elements(set_1, set_2):
         if element not in set_1:
             result.append(element)
     return result
+
+#  Below also works in 1 line of code
+#  return set_1 ^ set_2
