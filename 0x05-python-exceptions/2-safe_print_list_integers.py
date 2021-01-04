@@ -12,3 +12,10 @@ def safe_print_list_integers(my_list=[], x=0):
     return (i)
 
 # Function that prints the first x elements of a list and only integers.
+# i = counter variable to keep count correct which will be returned
+# for loop iterates through list to index x
+# try: print the value if an integer, increment i/count
+# except: value is not an integer, increment index to skip str element...
+# ...then continue iterating through index until x
+# print newline
+# return i/count
