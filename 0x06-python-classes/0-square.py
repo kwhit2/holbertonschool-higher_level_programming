@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Doc string defining a class Square """
+""" This module contains an empty class """
 
 
 class Square:
