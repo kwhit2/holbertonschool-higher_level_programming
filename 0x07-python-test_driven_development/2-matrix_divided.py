@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     Args:
         matrix - matrix of ints or floats (otherwise raise TypeError)
         div - integer, number to divide the matrix values by
-    Raise:
+    Raises:
         TypeError: if a or b is not an int
     Returns:
         a new matrix, with values of 'matrix' divided by int variable 'div'
