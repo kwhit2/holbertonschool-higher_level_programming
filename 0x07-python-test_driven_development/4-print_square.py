@@ -7,7 +7,7 @@ def print_square(size):
     """ print_square method
     Args:
         size - int (length of a side of the square)
-    Raises:
+    Raise:
         TypeError: if size is not an int, if size is a float and less than 0
         ValueError: if size is less than 0
     Returns:
