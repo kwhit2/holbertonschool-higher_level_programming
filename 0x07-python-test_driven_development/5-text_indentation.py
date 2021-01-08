@@ -11,14 +11,23 @@ def text_indentation(text):
         TypeError: text must be a string
     Returns: None
     """
-    chars = ".?:"
 
-    if type(text) is not str:
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
+    c = text.replace('.', '.\n\n')
+    c = c.replace(':', ':\n\n')
+    c = c.replace('?', '?\n\n')
+    c = c.replace('\n ', '\n')
+    print(c, end="")
 
-    else:
-        for c in text:
-            print(c, end="")
-            if c in chars:
-                print()
-                print()
+# Cannot determine how to remove blank space @ beginning of newline
+# chars = ".?:"
+# if type(text) is not str:
+#    raise TypeError("text must be a string")
+#
+#    else:
+#        for c in text:
+#            print(c, end="")
+#            if c in chars:
+#                print()
+#                print()
