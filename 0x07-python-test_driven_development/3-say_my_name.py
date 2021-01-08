@@ -9,7 +9,7 @@ def say_my_name(first_name, last_name=""):
     """ say_my_name method
     Args:
         first_name, last_name - strings
-    Raise:
+    Raises:
         TypeError: if first_name and last_name are not both strings
     Returns:
         None
