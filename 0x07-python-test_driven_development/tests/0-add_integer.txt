@@ -33,4 +33,16 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
+test: passsing in Nan to the function
+    >>> add_integer(float("NaN"))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+test: passing float overflow
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
 """
