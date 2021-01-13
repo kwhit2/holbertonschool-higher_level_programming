@@ -25,4 +25,8 @@ Traceback (most recent call last):
 ValueError: m_b can't be empty
 
 
+>>> print(matrix_mul([[1, 2], [3, 4]], [[2, 4], [3, 4]]))
+None
+
+
 """
