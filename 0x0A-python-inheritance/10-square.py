@@ -41,10 +41,3 @@ class Square(Rectangle):
                 Area of square
         """
         return ("[Rectangle] {}/{}".format(self.__size, self.__size))
-
-# if above does not work
-# def __init__(self, size):
-# """ override width & height with size """
-# super().integer_validator("size", size)
-# super(Square, self).__init__(size, size)
-# self.__size = size
