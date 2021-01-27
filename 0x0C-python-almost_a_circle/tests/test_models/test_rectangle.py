@@ -182,19 +182,16 @@ class TestRectangle(unittest.TestCase):
             string output/format """
         Base._Base__nb_objects = 0
         r1 = Rectangle(2, 3, 2, 2, 9)
-        stringrep = str(r1)
-        self.assertEqual(stringrep, "[Rectangle] (9) 2/2 - 2/3")
+        self.assertEqual(r1.__str__(), "[Rectangle] (9) 2/2 - 2/3")
         r2 = Rectangle(2, 3, 2, 2)
-        stringrep2 = str(r2)
-        self.assertEqual(stringrep2, "[Rectangle] (1) 2/2 - 2/3")
+        self.assertEqual(r2.__str__(), "[Rectangle] (1) 2/2 - 2/3")
 
     def test_rect_update(self):
         """ Test that update method for Rectangle class works """
         Base._Base__nb_objects = 0
         r1 = Rectangle(10, 10, 10, 10)
         r1.update(height=1)
-        stringrep = str(r1)
-        self.assertEqual(stringrep, "[Rectangle] (1) 10/10 - 10/1")
+        self.assertEqual(r1.__str__(), "[Rectangle] (1) 10/10 - 10/1")
 
     def test_rect_to_dictionary(self):
         """ Test that to_dictionary method for Rectangle class works """
