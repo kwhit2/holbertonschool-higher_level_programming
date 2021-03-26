@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" script that lists all State objects that contain the letter a from the...
-    ...database hbtn_0e_6_usa """
+""" script that changes the name of a State object from the database...
+    ...hbtn_0e_6_usa: Adding New Mexico to state.id.like(2) """
 
 
 if __name__ == "__main__":
