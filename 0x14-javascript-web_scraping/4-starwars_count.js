@@ -1,17 +1,20 @@
 #!/usr/bin/node
-// a script that display the status code of a GET request.
+// script that prints the number of movies where the character “Wedge Antilles” is present
 const request = require('request');
-const process = require('process');
-const url = 'https://swapi-api.hbtn.io/api/films/';
-const characterId = 18;
+const url = process.argv[2];
 
-request(url + episodeNum, function (err, response, body) {
+request(url, function (err, res, body) {
   if (err) {
-    console.log(err);
-  } else if (response.statusCode === 200) {
-    const jsonObj = JSON.parse(body);
-    console.log(jsonObj.title);
-  } else {
-    console.log('Error: ' + response.statusCode);
+    console.error(err);
+    return;
   }
+  let occ = 0;
+  for (const film of JSON.parse(body).results) {
+    for (const character of film.characters) {
+      if (character.includes('18')) {
+        occ = occ + 1;
+      }
+    }
+  }
+  console.log(occ);
 });
