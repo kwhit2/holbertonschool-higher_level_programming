@@ -5,5 +5,5 @@
 // 3. can’t use document.querySelector to select the HTML tag
 // 4. must use the JQuery API
 $('#add_item').click(function () {
-  $('UL.my_list').append('<li>Item<li>');
+  $('UL.my_list').append('<li>Item</li>');
 });
